@@ -28,10 +28,10 @@ export default function AlertsPanel({ onShowAlertDetails }: AlertsPanelProps) {
           <div className="border border-red-200 rounded-lg p-4 bg-red-50">
             <div className="flex justify-between items-start">
               <div>
-                <h4 className="font-semibold text-red-800">RBM-005</h4>
-                <p className="text-red-700 mb-2">Temperature exceeding range</p>
-                <p className="text-sm text-red-600">Equipment: Blood Samples (20 vials)</p>
-                <p className="text-xs text-red-500 mt-1">Alert triggered: Sep 28, 2024 08:15</p>
+                <h4 className="font-bold text-red-900">RBM-005</h4>
+                <p className="text-red-800 font-semibold mb-2">Temperature exceeding range</p>
+                <p className="text-sm text-red-700 font-medium">Equipment: Blood Samples (20 vials)</p>
+                <p className="text-xs text-red-600 font-medium mt-1">Alert triggered: Sep 28, 2024 08:15</p>
               </div>
               <div className="flex space-x-2">
                 <button 
@@ -50,10 +50,10 @@ export default function AlertsPanel({ onShowAlertDetails }: AlertsPanelProps) {
           <div className="border border-red-200 rounded-lg p-4 bg-red-50">
             <div className="flex justify-between items-start">
               <div>
-                <h4 className="font-semibold text-red-800">RBM-005</h4>
-                <p className="text-red-700 mb-2">Shipment &gt;3 days</p>
-                <p className="text-sm text-red-600">Equipment: Blood Samples (20 vials)</p>
-                <p className="text-xs text-red-500 mt-1">Alert triggered: Sep 28, 2024 00:00</p>
+                <h4 className="font-bold text-red-900">RBM-005</h4>
+                <p className="text-red-800 font-semibold mb-2">Shipment &gt;3 days</p>
+                <p className="text-sm text-red-700 font-medium">Equipment: Blood Samples (20 vials)</p>
+                <p className="text-xs text-red-600 font-medium mt-1">Alert triggered: Sep 28, 2024 00:00</p>
               </div>
               <div className="flex space-x-2">
                 <button 

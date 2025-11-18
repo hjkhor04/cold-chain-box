@@ -26,8 +26,8 @@ export function Modal({ isOpen, onClose, title, children, maxWidth = '4xl' }: Mo
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 modal flex items-center justify-center p-4 z-50">
-      <div className={`bg-white rounded-lg max-w-${maxWidth} w-full max-h-[90vh] overflow-y-auto`}>
+    <div className="fixed inset-0 bg-black bg-opacity-50 modal flex items-center justify-center p-4" style={{ zIndex: 9999 }}>
+      <div className={`bg-white rounded-lg max-w-${maxWidth} w-full max-h-[90vh] overflow-y-auto relative`} style={{ zIndex: 10000 }}>
         <div className="p-6">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
@@ -52,8 +52,8 @@ export function SuccessPopup({ isOpen, onClose, message = 'Saved Successfully!' 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-lg max-w-md w-full success-popup">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4" style={{ zIndex: 9999 }}>
+      <div className="bg-white rounded-lg max-w-md w-full success-popup relative" style={{ zIndex: 10000 }}>
         <div className="p-6 text-center">
           <div className="mb-4">
             <CheckCircle className="w-16 h-16 text-green-500 mx-auto" />

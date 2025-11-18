@@ -56,24 +56,24 @@ export default function StatusPanel({ onShowTracking }: StatusPanelProps) {
             </div>
             <div className="grid grid-cols-2 gap-4 text-sm mb-4">
               <div>
-                <span className="text-gray-500">Temperature:</span>
-                <p className="font-medium">
+                <span className="text-gray-700 font-medium">Temperature:</span>
+                <p className="font-semibold text-gray-900">
                   {rbm001Loading ? 'Loading...' : rbm001Data ? `${rbm001Data.temperature}°C` : '4.2°C'}
                 </p>
               </div>
               <div>
-                <span className="text-gray-500">Humidity:</span>
-                <p className="font-medium">
+                <span className="text-gray-700 font-medium">Humidity:</span>
+                <p className="font-semibold text-gray-900">
                   {rbm001Loading ? 'Loading...' : rbm001Data ? `${rbm001Data.humidity}% RH` : '45% RH'}
                 </p>
               </div>
               <div>
-                <span className="text-gray-500">Destination:</span>
-                <p className="font-medium">Singapore General Hospital</p>
+                <span className="text-gray-700 font-medium">Destination:</span>
+                <p className="font-semibold text-gray-900">Singapore General Hospital</p>
               </div>
               <div>
-                <span className="text-gray-500">ETA:</span>
-                <p className="font-medium">2024-09-29 14:00</p>
+                <span className="text-gray-700 font-medium">ETA:</span>
+                <p className="font-semibold text-gray-900">2024-09-29 14:00</p>
               </div>
             </div>
             <button 
@@ -99,20 +99,20 @@ export default function StatusPanel({ onShowTracking }: StatusPanelProps) {
             </div>
             <div className="grid grid-cols-2 gap-4 text-sm mb-4">
               <div>
-                <span className="text-gray-500">Temperature:</span>
-                <p className="font-medium">-2.1°C</p>
+                <span className="text-gray-700 font-medium">Temperature:</span>
+                <p className="font-semibold text-gray-900">-2.1°C</p>
               </div>
               <div>
-                <span className="text-gray-500">Humidity:</span>
-                <p className="font-medium text-red-600">25% RH</p>
+                <span className="text-gray-700 font-medium">Humidity:</span>
+                <p className="font-semibold text-red-600">25% RH</p>
               </div>
               <div>
-                <span className="text-gray-500">Destination:</span>
-                <p className="font-medium">Bangkok Medical Center</p>
+                <span className="text-gray-700 font-medium">Destination:</span>
+                <p className="font-semibold text-gray-900">Bangkok Medical Center</p>
               </div>
               <div>
-                <span className="text-gray-500">ETA:</span>
-                <p className="font-medium">2024-09-30 09:00</p>
+                <span className="text-gray-700 font-medium">ETA:</span>
+                <p className="font-semibold text-gray-900">2024-09-30 09:00</p>
               </div>
             </div>
             <button 

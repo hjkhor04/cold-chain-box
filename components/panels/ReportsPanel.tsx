@@ -119,20 +119,20 @@ export default function ReportsPanel({ onViewReport, onExportReport, onExportAll
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                   <div>
-                    <span className="text-gray-500">Completed:</span>
-                    <p className="font-medium">{shipment.date}</p>
+                    <span className="text-gray-600 font-medium">Completed:</span>
+                    <p className="font-semibold text-gray-800">{shipment.date}</p>
                   </div>
                   <div>
-                    <span className="text-gray-500">Duration:</span>
-                    <p className="font-medium">{shipment.duration}</p>
+                    <span className="text-gray-600 font-medium">Duration:</span>
+                    <p className="font-semibold text-gray-800">{shipment.duration}</p>
                   </div>
                   <div>
-                    <span className="text-gray-500">Avg Temp:</span>
-                    <p className="font-medium">{shipment.temp}</p>
+                    <span className="text-gray-600 font-medium">Avg Temp:</span>
+                    <p className="font-semibold text-gray-800">{shipment.temp}</p>
                   </div>
                   <div>
-                    <span className="text-gray-500">Alerts:</span>
-                    <p className="font-medium">{shipment.alerts}</p>
+                    <span className="text-gray-600 font-medium">Alerts:</span>
+                    <p className="font-semibold text-gray-800">{shipment.alerts}</p>
                   </div>
                 </div>
               </div>

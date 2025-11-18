@@ -34,8 +34,8 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
       
       <div className="bg-white rounded-lg shadow-lg panel-accent p-6">
         <div className="mb-4">
-          <h3 className="text-lg font-semibold text-gray-800">Alert Thresholds</h3>
-          <p className="text-sm text-gray-600">
+          <h3 className="text-lg font-bold text-gray-900">Alert Thresholds</h3>
+          <p className="text-sm text-gray-700 font-medium">
             Configure custom temperature and humidity ranges for automated alert triggers and compliance monitoring.
           </p>
         </div>
@@ -43,13 +43,13 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
         <div className="space-y-8">
           {/* Temperature Settings */}
           <div>
-            <h4 className="text-md font-semibold text-gray-700 mb-4">Temperature Thresholds</h4>
+            <h4 className="text-md font-bold text-gray-800 mb-4">Temperature Thresholds</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-4 border rounded-lg">
                 <h5 className="font-medium text-gray-800 mb-3">2–8°C Range</h5>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm text-gray-600 mb-1">Min Temp (°C)</label>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">Min Temp (°C)</label>
                     <input 
                       type="number" 
                       value={settings.temp2to8Min}
@@ -58,7 +58,7 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm text-gray-600 mb-1">Max Temp (°C)</label>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">Max Temp (°C)</label>
                     <input 
                       type="number" 
                       value={settings.temp2to8Max}
@@ -73,7 +73,7 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
                 <h5 className="font-medium text-gray-800 mb-3">≤0°C Range</h5>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm text-gray-600 mb-1">Min Temp (°C)</label>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">Min Temp (°C)</label>
                     <input 
                       type="number" 
                       value={settings.tempBelow0Min}
@@ -82,7 +82,7 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm text-gray-600 mb-1">Max Temp (°C)</label>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">Max Temp (°C)</label>
                     <input 
                       type="number" 
                       value={settings.tempBelow0Max}
@@ -97,13 +97,13 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
 
           {/* Humidity Settings */}
           <div>
-            <h4 className="text-md font-semibold text-gray-700 mb-4">Humidity Thresholds</h4>
+            <h4 className="text-md font-bold text-gray-800 mb-4">Humidity Thresholds</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-4 border rounded-lg">
                 <h5 className="font-medium text-gray-800 mb-3">2–8°C Range</h5>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm text-gray-600 mb-1">Min Humidity (%RH)</label>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">Min Humidity (%RH)</label>
                     <input 
                       type="number" 
                       value={settings.humidity2to8Min}
@@ -112,7 +112,7 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm text-gray-600 mb-1">Max Humidity (%RH)</label>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">Max Humidity (%RH)</label>
                     <input 
                       type="number" 
                       value={settings.humidity2to8Max}
@@ -127,7 +127,7 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
                 <h5 className="font-medium text-gray-800 mb-3">≤0°C Range</h5>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm text-gray-600 mb-1">Min Humidity (%RH)</label>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">Min Humidity (%RH)</label>
                     <input 
                       type="number" 
                       value={settings.humidityBelow0Min}
@@ -136,7 +136,7 @@ export default function SettingsPanel({ onSave }: SettingsPanelProps) {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm text-gray-600 mb-1">Max Humidity (%RH)</label>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">Max Humidity (%RH)</label>
                     <input 
                       type="number" 
                       value={settings.humidityBelow0Max}

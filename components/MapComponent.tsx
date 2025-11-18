@@ -149,8 +149,9 @@ export default function MapComponent({ onMarkerClick }: MapComponentProps) {
     <MapContainer
       center={[5.0, 110.0]}
       zoom={5}
-      style={{ height: '100%', width: '100%', borderRadius: '0.5rem' }}
+      style={{ height: '100%', width: '100%', borderRadius: '0.5rem', zIndex: 1 }}
       scrollWheelZoom={true}
+      zoomControl={true}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
